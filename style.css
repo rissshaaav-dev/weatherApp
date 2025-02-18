@@ -10,6 +10,7 @@
   --white: #fafafa;
   --black: #3e3e3e;
 }
+
 body {
   background-color: var(--lightGray);
   width: 100vw;
@@ -20,7 +21,7 @@ body {
 }
 .container {
   background-color: var(--white);
-  width: 80%;
+  width: 70%;
   height: 90%;
   border-radius: 20px;
   display: flex;
@@ -28,28 +29,42 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 30px;
-  /* display: grid;
-  place-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  column-gap: 10px; */
 }
+
 header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  font-size: 1.25rem;
 }
+header input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  appearance: none;
+}
+.today{
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--black);
+    text-align: right;
+}
+
 main {
   color: var(--black);
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  /* border: 1px solid var(--darkGray); */
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 .currentWeather {
   display: flex;
@@ -94,10 +109,10 @@ main {
 .conditions {
   position: absolute;
   top: 35%;
-  right: -40%;
+  right: -60%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   font-size: 1.5rem;
   font-weight: 600;
@@ -125,11 +140,7 @@ footer {
   min-height: 125px;
   min-width: 85px;
   padding: 10px 20px;
-  /* border: 1px solid var(--darkGray); */
   border-radius: 15px;
-}
-.today {
-  border: 2px solid var(--lightGray);
 }
 .weekdays .day {
   font-size: 1rem;
