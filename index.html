@@ -22,7 +22,11 @@
         <!-- cityname -->
         <input type="text" id="city" placeholder="Enter city name" />
         <!-- date -->
-        <div id="date">18.02.2025</div>
+        <div class="today">
+            <span id="currentTime"></span>
+            <span id="todayDay"></span>,
+            <span id="todayDate"></span>
+        </div>
       </header>
 
       <main class="currentWeather">
@@ -55,10 +59,10 @@
       </main>
 
       <footer>
-        <div class="weekdays today">
-          <p class="day">Today</p>
+        <div class="weekdays">
+          <p class="day">Tue</p>
           <p class="tempForecast"><span>20</span>&deg;</p>
-          <p class="statusForecast">Mist</p>
+          <p class="statusForecast"></p>
         </div>
         <div class="weekdays">
           <p class="day">Wed</p>
@@ -82,5 +86,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
