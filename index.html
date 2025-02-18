@@ -18,27 +18,26 @@
   </head>
   <body>
     <div class="container">
-      <main>
-        <div class="nav">
-          <!-- cityname -->
-          <input type="text" id="city" placeholder="Enter city name" />
-          <!-- date -->
-          <div id="date">18.02.2025</div>
-        </div>
+      <header class="nav">
+        <!-- cityname -->
+        <input type="text" id="city" placeholder="Enter city name" />
+        <!-- date -->
+        <div id="date">18.02.2025</div>
+      </header>
 
-        <div class="currentWeather">
-          <div class="temp">
-            <p id="tempValue">
-              <!-- <span id="temp">25&deg;</span> -->
-              <span id="temp">25</span>
-            </p>
-            <p class="feelsLike">
-              Feels like <span id="feelsLikeValue">25</span>
-              <span>&deg;</span>
-            </p>
-            <p id="weatherStatus">Cloudy</p>
+      <main class="currentWeather">
+        <div class="temp">
+          <p id="tempValue">
+            <!-- <span id="temp">25&deg;</span> -->
+            <span id="temp">25</span>
+          </p>
+          <p class="feelsLike">
+            Feels like <span id="feelsLikeValue">25</span>
+            <span>&deg;</span>
+          </p>
+          <p id="weatherStatus">Cloudy</p>
 
-            <div class="conditions">
+          <div class="conditions">
             <!-- wind speed with flowing air icon -->
             <p>
               <span class="material-symbols-outlined"> air </span>
@@ -52,10 +51,36 @@
               <span>%</span>
             </p>
           </div>
-          </div>
-          
         </div>
       </main>
+
+      <footer>
+        <div class="weekdays today">
+          <p class="day">Today</p>
+          <p class="tempForecast"><span>20</span>&deg;</p>
+          <p class="statusForecast">Mist</p>
+        </div>
+        <div class="weekdays">
+          <p class="day">Wed</p>
+          <p class="tempForecast"><span>20</span>&deg;</p>
+          <p class="statusForecast">Mist</p>
+        </div>
+        <div class="weekdays">
+          <p class="day">Thu</p>
+          <p class="tempForecast"><span>20</span>&deg;</p>
+          <p class="statusForecast">Mist</p>
+        </div>
+        <div class="weekdays">
+          <p class="day">Fri</p>
+          <p class="tempForecast"><span>20</span>&deg;</p>
+          <p class="statusForecast">Mist</p>
+        </div>
+        <div class="weekdays">
+          <p class="day">Sat</p>
+          <p class="tempForecast"><span>20</span>&deg;</p>
+          <p class="statusForecast">Mist</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
